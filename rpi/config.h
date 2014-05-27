@@ -12,6 +12,7 @@ typedef struct
 	int display_smooth_stretch;
 	int display_effect;
 	int maintain_aspect_ratio;
+	char config_file[MAX_PATH];
 } CFG_OPTIONS;
 
 #endif

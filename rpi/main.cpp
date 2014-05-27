@@ -110,6 +110,7 @@ void parse_cmd(int argc, char *argv[], char *path)
 		{"hw-rescale", 0, &config_options.option_rescale, 2},
 		{"showfps", 0, &config_options.option_showfps, 1},
 		{"no-showfps", 0, &config_options.option_showfps, 0},
+                {"config", 0, &config_options.config_file, 0},
 		{"gamelist", 0, 0, 'l'}
 	};
 
