@@ -110,7 +110,7 @@ void parse_cmd(int argc, char *argv[], char *path)
 		{"hw-rescale", 0, &config_options.option_rescale, 2},
 		{"showfps", 0, &config_options.option_showfps, 1},
 		{"no-showfps", 0, &config_options.option_showfps, 0},
-                {"config", 0, &config_options.config_file, 0},
+                {"config", 1, 0, 'c'},
 		{"gamelist", 0, 0, 'l'}
 	};
 
@@ -127,6 +127,18 @@ void parse_cmd(int argc, char *argv[], char *path)
 			case 'l':
 			    //Generate full gamelist
 				generate_gamelist();		
+				break;
+			case 'c':
+				//printf("%s", optarg);
+				//exit(0);
+				//strcpy(config_options.config_file, strdup(optarg));
+				//config_options.config_file = *optarg;
+				//config_options.config_file = "pikachu";
+				//printf("looking for config file");
+				//exit(0);
+				strncpy ( config_options.config_file, optarg, strlen(optarg) );
+				//printf("%s", config_options.config_file);
+				//exit(0);
 				break;
 		}
 	}

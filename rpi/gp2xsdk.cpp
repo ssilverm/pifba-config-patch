@@ -41,7 +41,8 @@ static GKeyFile *gkeyfile=0;
 static void open_config_file(void)
 {
 	GError *error = NULL;
-    
+	//printf("%s", config_options.config_file);
+	//exit(0);
 	gkeyfile = g_key_file_new ();
 	if (!(int)g_key_file_load_from_file (gkeyfile, config_options.config_file, G_KEY_FILE_NONE, &error))
 	{
