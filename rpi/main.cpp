@@ -129,16 +129,7 @@ void parse_cmd(int argc, char *argv[], char *path)
 				generate_gamelist();		
 				break;
 			case 'c':
-				//printf("%s", optarg);
-				//exit(0);
-				//strcpy(config_options.config_file, strdup(optarg));
-				//config_options.config_file = *optarg;
-				//config_options.config_file = "pikachu";
-				//printf("looking for config file");
-				//exit(0);
 				strncpy ( config_options.config_file, optarg, strlen(optarg) );
-				//printf("%s", config_options.config_file);
-				//exit(0);
 				break;
 		}
 	}
